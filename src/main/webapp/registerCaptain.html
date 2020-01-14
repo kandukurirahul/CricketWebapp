@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Registration form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <img class="logo"
+         src="logo.jpg">
+    <h1 style="color: aliceblue;text-align:center;">
+        Pramati Cricket League
+    </h1>
+</div>
+<table class="log">
+    <tr>
+        <td>
+            <a class="nav" href="index.html">Home </a>
+        </td>
+        <td>
+            <select class="nav" onchange="la(this.value)">
+                <option>Register</option>
+                <option value="registerPlayer.html">Register As Player</option>
+                <option value="registerCaptain.html">Register as captain</option>
+            </select>
+            <script>
+                function la(src){
+                window.location=src;
+                }
+            </script>
+        </td>
+        <td>
+            <a class="nav" href="schedule.html">Schedule </a>
+        </td>
+        <td>
+            <a class="nav" href="rules.html">Rules </a>
+        </td>
+    </tr>
+</table>
+<div class="mainBackground">
+    <div class="loginBlock">
+        <h1 style="text-align:center">Please fill below details for registration</h1>
+        <form method="post" action="registerCap">
+            <label><b>Team Name:</b><input type="text" name="teamname" autofocus="autofocus" class="label" required></label><br/>
+            <label><b>Name:</b><input type="text" name="name" autofocus="autofocus" class="label" required></label><br/>
+            <label><b>Employee Id:</b><input type="text" name="employeeid" class="label" required></label><br/>
+            <label><b>Email ID:</b><input type="email" name="email" class="label" required></label><br/>
+            <label><b>Password:</b><input type="password" name="pass" class="label" required></label><br/>
+            <label><b>Gender:</b></label><input type="radio" name="gender" class="label" value="male" required>Male
+            <input type="radio" name="gender" class="label" value="female" required>Female<br/>
+            <label><b>Mobile Number:</b><input type="text" name="mobileno" class="label" required></label><br/>
+            <!--        <label>Profile Photo:<input type="image" src=""/></label>-->
+            <label>
+                <b>Skills:</b>
+                <input type="checkbox" name="skills" value="Batting">Batting
+                <input type="checkbox" name="skills" value="Bowling">Bowling
+                <input type="checkbox" name="skills" value="Keeper">Keeper
+                <input type="checkbox" name="skills" value="AllRounder">All Rounder<br/>
+            </label>
+            <br/>
+            <label>
+                <input type="submit" value="Register" class="registerButton"/>
+            </label>
+        </form>
+    </div>
+</div>
+</body>
+</html>

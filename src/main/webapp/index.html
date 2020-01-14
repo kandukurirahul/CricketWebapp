@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+    <img class="logo"
+         src="logo.jpg">
+    <h1 style="color: aliceblue;text-align:center;">
+        Pramati Cricket League
+    </h1>
+</div>
+<table class="log">
+    <tr>
+        <td>
+            <a class="nav" href="index.html">Home </a>
+        </td>
+        <td>
+            <select class="nav" onchange="la(this.value)">
+                <option>Register</option>
+                <option value="registerPlayer.html">Register As Player</option>
+                <option value="registerCaptain.html">Register as captain</option>
+            </select>
+            <script>
+                function la(src){
+                window.location=src;
+                }
+            </script>
+        </td>
+        <td>
+            <a class="nav" href="schedule.html">Schedule </a>
+        </td>
+        <td>
+            <a class="nav" href="rules.html">Rules </a>
+        </td>
+    </tr>
+</table>
+<div class="mainBackground">
+</div>
+</body>
+
+</html>
